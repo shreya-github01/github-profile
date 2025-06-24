@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My GitHub Profile</title>
+  <title>GitHub Soul Profile 🌸</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="overlay"></div>
+
   <div class="container">
-    <div class="card" id="profile">Loading profile...</div>
+    <h1>GitHub Aura ✨</h1>
+    <input type="text" id="username" placeholder="Enter GitHub username" />
+    <button onclick="getGitHubData()">Show My GitHub 🌿</button>
+
+    <div id="profileCard" class="profile-card hidden">
+      <img id="avatar" alt="Avatar" />
+      <h2 id="name"></h2>
+      <p id="bio"></p>
+      <p><strong>Followers:</strong> <span id="followers"></span></p>
+      <p><strong>Public Repos:</strong> <span id="repos"></span></p>
+    </div>
   </div>
 
+  <div id="flowers" class="flowers-container"></div>
+  <audio id="bgMusic" src="https://cdn.pixabay.com/download/audio/2022/03/31/audio_2b5f000204.mp3" loop autoplay></audio>
   <script src="script.js"></script>
 </body>
 </html>
