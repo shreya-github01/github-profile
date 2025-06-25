@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SoulSky: A Diary to the Divine</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🕊️ SoulSky: A Diary to the Divine 🌌</h1>
+    <p id="quote">"Where there is love, there is life." – Mahatma Gandhi</p>
+    <textarea id="entry" placeholder="Write your sacred thoughts..."></textarea>
+
+    <div class="actions">
+      <button onclick="toggleMusic()">🎵 Music</button>
+      <button onclick="saveEntry()">💾 Save</button>
+      <button onclick="toggleDiary()">📖 Diary Book</button>
+    </div>
+
+    <div id="entries" class="hidden"></div>
+
+    <audio id="bgMusic" loop>
+      <source src="https://cdn.pixabay.com/download/audio/2023/05/28/audio_2b4247a515.mp3?filename=divine-harp-144001.mp3" type="audio/mpeg">
+    </audio>
+
+    <footer>
+      <p>Crafted with love by Shreya ✨ | <a href="https://github.com/shreya5200" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+
+  <div id="snow"></div>
+  <script src="script.js"></script>
+</body>
+</html>
